@@ -71,7 +71,7 @@ img {
     border-radius: 14px 14px 0px 0px;
 }
 
- input,
+input,
   button,
   input:focus,
   button:focus {
@@ -88,6 +88,19 @@ img {
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a,
+  a:focus {
+    color: inherit;
+    outline: 0;
   }
   
    #search-form {
@@ -140,14 +153,15 @@ img {
   }
 
   .search-suggestion b::after {
-    content: ' ';
+	font-weight: 600;
+    /* content: '';
     position: absolute;
     top: 51%;
     right: 0;
     left: 0;
     height: 3px;
     background-color: #fff;
-    opacity: .8;
+    opacity: 0; */
   }
 
   .search-suggestion.highlight b::after {

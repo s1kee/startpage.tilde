@@ -51,16 +51,17 @@
                 </div>
             </div>
         </div>
-    </body>
+    
 	
-<form class="overlay center" id="search-form" autocomplete="off" spellcheck="false">
-  <div>
-    <input id="search-input" type="text">
-    <ul id="search-suggestions"></ul>
-  </div>
-</form>
+	<form class="overlay center" id="search-form" autocomplete="off" spellcheck="false">
+       <div>
+            <input id="search-input" type="text">
+            <ul id="search-suggestions"></ul>
+       </div>
+    </form>
 
-<aside class="overlay center" id="help"></aside>
+  <aside class="overlay center" id="help"></aside>
+  </body>
 
 </html>
 
@@ -70,28 +71,28 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-      [null, 'Google', '*', 'https://encrypted.google.com', '/ssearch?q={}', '#111'],
-      ['feed', 'reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#ff6d00'],
-      ['feed', 'twitter', 't', 'https://twitter.com', null, '#333'],
-      ['feed', 'youtube', 'y', 'https://youtube.com/', '/results?search_query={}', '#cd#000000201f'],
-      ['feed', 'twitch', 'twc', 'https://www.twitch.tv/directory/following', null, '#4285f4'],
-      ['feed', 'discord', 'k', 'https://discord.com/channels/827145884244377609/887911234924597268', null, '#fb0'],
-      ['uni', 'classroom', 'plp', 'https://classroom.google.com/u/1/h', null, '#333'],
-      ['uni', 'ustep', 'lab', 'https://ustep.ustp.edu.ph/my', null, '#333'],
-      ['uni', 'gmail', 'm', 'https://mail.google.com/mail/u/1/#inbox', null, '#256d7b'],
+      [null, 'Google', '*', 'https://www.google.com', '/search?q={}', '#111'],
+      ['feed', 'reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#733a2d'],
+      ['feed', 'twitter', 'twt', 'https://twitter.com', null, '#15202b'],
+      ['feed', 'youtube', 'y', 'https://youtube.com/', '/results?search_query={}', '#73342d'],
+      ['feed', 'twitch', 'twc', 'https://www.twitch.tv/directory/following', null, '#592d73'],
+      ['feed', 'discord', 'k', 'https://discord.com/channels/827145884244377609/887911234924597268', null, '#3b2d73'],
+      ['uni', 'classroom', 'plp', 'https://classroom.google.com/u/1/h', null, '#2d7343'],
+      ['uni', 'ustep', 'ust', 'https://ustep.ustp.edu.ph/my', null, '#73552d'],
+      ['uni', 'gmail', 'm', 'https://mail.google.com/mail/u/1/#inbox', null, '#2d7353'],
       ['uni', 'groups', 'fb', 'https://www.facebook.com/groups/feed/', null, '#5f99cf'],
-      ['uni', 'workspace', 'n', 'https://www.notion.so/3RD-YR-2ND-SEM-51c394233f3447848298b3d7c0a8fe00', '/search?q={}', '#ff8800'],
-      ['media', 'Line Radio', 'l', 'https://linerad.io', '/#{}', '#39CCCC'],
-      ['media', 'Khan Academy', 'A', 'https://www.khanacademy.org/', '/search?page_search_query={}', '#9cb443'],
-      ['media', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
-      ['media', 'Udacity', 'u', 'https://classroom.udacity.com/me', null, '#cd201f'],
-      ['media', 'Udacity', 'gt', 'https://www.youtube.com/playlist?list=PLABBDFA15A88BA4ED', null, '#cd201f'],
-      ['Study', 'Den', 'den', 'http://demoden.pythonanywhere.com/knowledge/knowledgestore/add/', null, '#cd201f'],
-      ['arr', 'Expenses Tracker', 'ex', 'https://darth-dodo.github.io/expenses/', null, '#333'],
-      ['arr', 'Indian Investments', 'ii', 'https://www.reddit.com/r/indiainvestments', null, '#333'],
-      ['arr', 'Super CookIT', 'co', 'http://supercookit.pythonanywhere.com/', null, '#fb0'],
-      ['arr', 'Mfp', 'mfp', 'http://www.myfitnesspal.com/food/diary/', null, '#fb0'],
-      ['arr', '12wy', '12wy', 'https://trello.com/b/Rh4Jkb7p/dodos-12-week-year', null, '#fb0']
+      ['uni', 'notion', 'n', 'https://www.notion.so/', null, '#2d7353'],
+      ['media', 'trakt', 't', 'https://trakt.tv/dashboard', '/search?query={}', '#732d2d'],
+	  ['media', 'letterboxd', 'l', 'https://letterboxd.com/jelai', '/search/{}', '#14181c'],
+      ['media', 'gdrive', 'gd', 'https://drive.google.com/drive/u/0/folders/1gnPcarLH78AFgckDm2W3taqsShXZQL07', null, '#b9aee9'],
+      ['media', 'index', 'sike', 'https://cloud.sikeee.workers.dev/0:/', null, '#b9aee9'],
+      ['media', 'gallery', 'tm', 'https://saintss.tumblr.com/', null, '#b9aee9'],
+	  [null, null, '~', 'https://github.com/darth-dodo/tilde/edit/gh-pages/data/quotes.txt', '/search?query={}', '#333'],
+      ['arr', 'M4D', 'mv', 'https://movies4discord.xyz/', '/search?query={}', '#111220'],
+      ['arr', 'PSA', 'psa', 'https://psa.pm/', null, '#111220'],
+      ['arr', 'radarr', 'rd', 'http://localhost:7878/', null, '#b5cea4'],
+      ['arr', 'sonarr', 'sn', 'http://localhost:8989/', null, '#b5cea4'],
+      ['arr', 'jackett', 'jk', 'http://127.0.0.1:9117/UI/Dashboard', null, '#b5cea4']
     ],
 
     // give suggestions as you type
@@ -107,14 +108,14 @@
     influencers: [
       { name: 'Default', limit: 5 },
       { name: 'History', limit: 1 },
-      { name: 'DuckDuckGo', limit: 1 },
+      { name: 'DuckDuckGo', limit: 5 },
     ],
 
     // default search suggestions for the specified queries
     defaultSuggestions: {
-      'g': ['g/issues', 'g/pulls', 'gist.github.com', 'g/darth-dodo', 'g/laughguru/backend'],
-      'l': ['l:electronic', 'l:chill', 'l:focus', 'l:sleep', 'l:ambient'],
-      'r': ['r/r/keto', 'r/r/indianonpolitical', 'r/r/python', 'r/r/listentothis', 'r/r/aww'],
+      'm': ['https://mail.google.com/mail/u/0/#inbox', 'https://mail.google.com/mail/u/2/#inbox'],
+      'n': ['/3RD-YR-2ND-SEM-51c394233f3447848298b3d7c0a8fe00'],
+      'r': ['r/r/fantasy', 'r/r/VALORANT', 'r/r/apexlegends', 'r/r/notion', 'r/r/piracy'],
       's': ['s/you/likes', 's/discover/the-upload'],
     },
 
@@ -186,7 +187,7 @@
       }
     },
   };
-  
+
   class Clock {
     constructor(options) {
       this._el = $.el('#clock');
